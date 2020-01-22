@@ -1,0 +1,23 @@
+# Game Maker Language Correlations with OOP and Unity
+
+
+- Objects: Prefabs
+- Object Instances: Game Objects 
+- Object Actions: Mono Behaviors
+- Parent/Child objects: A way of inheriting actions
+- 1D Array: Lists or Structs
+- 2D Array: Collections or Matrices
+- Scripts: Global Functions
+- Enums: Global Enums
+- Rooms: Scenes
+- Timelines: Coroutines/Stepwatch
+- Events:
+	- Step: Update
+	- Alarm: Timeout script
+	- 
+
+
+## Finite State Machine
+
+- GUI State: Menu, World, Dialog, etc.
+- 

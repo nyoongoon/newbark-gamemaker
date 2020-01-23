@@ -4,7 +4,8 @@
     "mvc": "1.1",
     "name": "e0a4efed-2e20-4df4-b9e8-462e046683da",
     "children": [
-        "712aa685-43d0-42fc-9d2a-f1a9c32fdf39"
+        "712aa685-43d0-42fc-9d2a-f1a9c32fdf39",
+        "eb3b4e5e-1428-4f7d-8ba7-cac318aa92f2"
     ],
     "filterType": "GMScript",
     "folderName": "Meta",

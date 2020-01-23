@@ -154,7 +154,7 @@
             "Key": "712aa685-43d0-42fc-9d2a-f1a9c32fdf39",
             "Value": {
                 "id": "841bc938-7d93-4670-b90e-4c0b54d01561",
-                "resourcePath": "scripts\/enums\/enums.yy",
+                "resourcePath": "scripts\/Constants\/Constants.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -239,6 +239,14 @@
             }
         },
         {
+            "Key": "eb3b4e5e-1428-4f7d-8ba7-cac318aa92f2",
+            "Value": {
+                "id": "d21dfb7e-357b-468a-8dfa-1d103b550b84",
+                "resourcePath": "scripts\/MACRO\/MACRO.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "f27934ef-b1ca-4977-9d43-c4451933f826",
             "Value": {
                 "id": "84a4823f-5b47-4c2b-a382-dd51fe7b6614",
@@ -272,7 +280,8 @@
         }
     ],
     "script_order": [
-        "712aa685-43d0-42fc-9d2a-f1a9c32fdf39"
+        "712aa685-43d0-42fc-9d2a-f1a9c32fdf39",
+        "eb3b4e5e-1428-4f7d-8ba7-cac318aa92f2"
     ],
     "tutorial": ""
 }

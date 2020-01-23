@@ -1,5 +1,5 @@
 {
-    "id": "712aa685-43d0-42fc-9d2a-f1a9c32fdf39",
+    "id": "32f66481-441d-4224-967a-b3fc9e89dc77",
     "modelName": "GMScript",
     "mvc": "1.0",
     "name": "Constants",

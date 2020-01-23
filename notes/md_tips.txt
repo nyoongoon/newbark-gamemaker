@@ -1,0 +1,8 @@
+- When x,y positions or speed are not integers, camera follow gets jittery
+
+	Are you using non-integer hspeed for your character?
+
+	I've noticed stuttering in the past when I've worked with hspeed and/or vspeed
+	values that are not integers. The camera thus rounds itself to the nearest
+	integer values, which causes that sort of jitter as the speed changes
+	between two values.

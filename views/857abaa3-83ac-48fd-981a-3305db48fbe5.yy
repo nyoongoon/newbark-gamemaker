@@ -7,7 +7,7 @@
         "0f04c111-0641-4e49-909c-4c222d2361de"
     ],
     "filterType": "GMSprite",
-    "folderName": "maps",
+    "folderName": "Maps",
     "isDefaultView": false,
     "localisedFolderName": ""
 }

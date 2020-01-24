@@ -6,3 +6,5 @@
 	values that are not integers. The camera thus rounds itself to the nearest
 	integer values, which causes that sort of jitter as the speed changes
 	between two values.
+	
+https://www.youtube.com/watch?v=pUvevR16qlU

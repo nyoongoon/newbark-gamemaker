@@ -239,6 +239,14 @@
             }
         },
         {
+            "Key": "9174a1be-8db1-42ae-8f30-a7fd7f90720c",
+            "Value": {
+                "id": "3ddaf844-2c99-446b-af4c-ee545334237f",
+                "resourcePath": "scripts\/g_move\/g_move.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "99e78f27-452b-4cfd-9ef6-b92c2cda7365",
             "Value": {
                 "id": "98b8b451-9091-4fb4-b928-bc930e6190cd",

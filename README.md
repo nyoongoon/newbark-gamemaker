@@ -1,7 +1,7 @@
 # NewBark
 🌳 Retro-style 2D RPG game engine for Game Maker, inspired by Pokémon Gold, Silver and Crystal.
 
-![screenshot](meta/screenshot.png)
+![screenshot](assets/images/screenshot.png)
 
 
 ## Requirements

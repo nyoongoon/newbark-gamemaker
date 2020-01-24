@@ -17,6 +17,7 @@ enum g_state {
 /// @description GamePad Buttons
 enum g_button {
 	// directions
+	dir_none,
 	dir_up,
 	dir_right,
 	dir_down,
@@ -33,6 +34,7 @@ enum g_button {
 }
 
 enum g_dir {
+	none = g_button.dir_none,
 	up = g_button.dir_up,
 	right = g_button.dir_right,
 	down = g_button.dir_down,

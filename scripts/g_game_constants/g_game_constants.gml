@@ -9,4 +9,4 @@
 // Player Movement
 #macro g_player_walk_speed 4
 #macro g_player_running_speed (g_player_walk_speed * 2)
-#macro g_player_turn_around_delay 5 // steps
+#macro g_player_dir_change_delay 5 // steps

@@ -4,7 +4,8 @@
     "mvc": "1.1",
     "name": "8081f337-ffb8-4e30-ab0d-8a75dff83ce6",
     "children": [
-        "9174a1be-8db1-42ae-8f30-a7fd7f90720c"
+        "2c483731-779d-4249-ac4e-a42d71d907c4",
+        "677f8ed9-80c7-4228-a4d0-ee36e04617cb"
     ],
     "filterType": "GMScript",
     "folderName": "Movement",

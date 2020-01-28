@@ -1,1 +1,0 @@
-var dir = argument0;

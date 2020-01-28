@@ -1,22 +1,5 @@
-- Smooth camera movement
-- Grid Movement
-- Music and SFX
-- Original map
-- Collisions
-- Visual Debugger (pressing d)
-- Room change / doors
-- Screen transitions
-- Dialogs
-- Interactable Objects
-- Area Music
-- Area Titles
-- Gamepad support
-- NPCs
-- Save/continue progress (position, direction, area title and music,...)
-- Game Loading screen
-- Day/Night cycles
 
 
-- Fences
-- Jump fences
-- Bicicle ride
+https://github.com/itsjavi/newbark-gm/projects/1
+
+https://github.com/itsjavi/newbark-gm/projects/2

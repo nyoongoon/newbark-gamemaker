@@ -1,0 +1,1 @@
+show_error("NewBark Exception: " + string(argument0), true);

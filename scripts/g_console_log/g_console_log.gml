@@ -1,0 +1,1 @@
+show_debug_message("NewBark DEBUG: " + string(argument0));

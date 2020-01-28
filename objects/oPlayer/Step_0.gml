@@ -1,78 +1,74 @@
 /// @description Handle Player Movement
 
-// v3.0: https://www.youtube.com/watch?v=bwP4Mxb3vJA
-
-// 0. Local vars
 var dir = g_dir.none;
 
-if (move_delay > 0) {
-	move_delay--;
+// Handle turn around delay / cool down
+if (turn_around_delay > 0) {
+	turn_around_delay--;
 	exit;
 }
 
-// 1. Move the player
-if(target_pos_x > x) { x += move_speed; show_debug_message("x+4 = " + string(x)); }
-if(target_pos_x < x) { x -= move_speed; show_debug_message("x-4 = " + string(x)); }
-if(target_pos_y > y) { y += move_speed; show_debug_message("y+4 = " + string(y)); }
-if(target_pos_y < y) { y -= move_speed; show_debug_message("y-4 = " + string(y)); }
+// Move the player
+// TODO: lerp function + delta to move N pixels smoothly
+if(target_pos_x > x) x += current_speed;
+if(target_pos_x < x) x -= current_speed;
+if(target_pos_y > y) y += current_speed;
+if(target_pos_y < y) y -= current_speed;
 
 
-// 2. Check if arrived to destination
+// Check if player arrived to destination
 if((state == g_state.mv_moving) && (target_pos_x == x && target_pos_y == y))
 {
-	show_debug_message("arrived!!");
 	state = g_state.mv_idle;
 	image_speed = 0;
 	image_index = 0;
 }
 
 
-// 3. Handle Input: if player moving state finished, then read input
+// Handle Input: if player finished moving or is idle, then read input
 if (state == g_state.mv_idle) {
-	dir = g_parse_input();
+	current_speed = g_player_walk_speed;
+	dir = g_input_get_direction();
+	buttons = g_input_get_buttons();
+	
+	if (buttons[g_button.btn_b] == true)
+	{
+		current_speed = g_player_running_speed;
+	}
+	
 	var diff_x = g_tile_width;
 	var diff_y = g_tile_height;
 	
 	if (dir != g_dir.none)
 	{
 		state = g_state.mv_moving;
-		image_speed = move_speed;
+		image_speed = current_speed;
 		
-		// turn around detect
+		// turn around detection
 		if(move_last_dir != g_dir.none && move_last_dir != dir)
 		{
-			show_debug_message("BLABLA1 TURN AROUND");
 			diff_x = 0;
 			diff_y = 0;
-			move_delay = 5; // 5 cycles
+			turn_around_delay = g_player_turn_around_delay;
 			image_speed = 0;
-			// TODO: speed buffer on button press to turn around without moving, save last_dir to compare
 		}
 		move_last_dir = dir;
 	}
 	
 	switch (dir) {
 	    case g_dir.up:
-			show_debug_message("BLABLA1 up");
-			//show_message("BLABLA2 up");
 			target_pos_y -= diff_y;
 	        sprite_index = spr_player_walk_up;
 	        break;
 	    case g_dir.down:
-			show_debug_message("BLABLA1 down");
-			//show_message("BLABLA2 down");
 			target_pos_y += diff_y;
 	        sprite_index = spr_player_walk_down;
 	        break;
 	    case g_dir.right:
-			show_debug_message("BLABLA1 right");
-			//show_message("BLABLA2 right");
 			target_pos_x += diff_x;
 	        sprite_index = spr_player_walk_right;
 	        break;
 	    case g_dir.left:
-			show_debug_message("BLABLA1 left");
-			//show_message("BLABLA2 left");
 			target_pos_x -= diff_x;
 	        sprite_index = spr_player_walk_left;
 	        break;
@@ -110,30 +106,4 @@ if (state == g_state.mv_idle) {
 //	sprite_index = sprite[current_dir];
 //} else {
 //	image_index = 0;
-//}
-
-
-/// v1.0:
-
-//g_parse_input(id)
-
-//if (state == g_state.mv_moving) {
-//	switch (facing_direction) {
-//	    case g_dir.up:
-//			y -= object_speed;
-//			sprite_index = spr_player_walk_up;
-//			break;
-//	    case g_dir.right:
-//			x += object_speed;
-//			sprite_index = spr_player_walk_right;
-//			break;
-//	    case g_dir.down:
-//			y += object_speed;
-//			sprite_index = spr_player_walk_down;
-//			break;
-//	    case g_dir.left:
-//			x -= object_speed;
-//			sprite_index = spr_player_walk_left;
-//	        break;
-//	}
 //}

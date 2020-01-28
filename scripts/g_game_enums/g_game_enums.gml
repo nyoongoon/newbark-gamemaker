@@ -27,8 +27,6 @@ enum g_button {
 	btn_b,
 	btn_x,
 	btn_y,
-	btn_zl,
-	btn_zr,
 	btn_start,
 	btn_select
 }

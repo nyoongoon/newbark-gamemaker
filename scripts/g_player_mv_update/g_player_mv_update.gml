@@ -8,7 +8,6 @@ if (mv_dir_change_delay > 0)
 }
 
 // Move the player
-// TODO: lerp function + delta to move N pixels smoothly
 if(mv_target_x > x) x += mv_speed;
 if(mv_target_x < x) x -= mv_speed;
 if(mv_target_y > y) y += mv_speed;

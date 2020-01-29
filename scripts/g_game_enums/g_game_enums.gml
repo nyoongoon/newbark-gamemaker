@@ -14,6 +14,14 @@ enum g_state {
 	mv_jumping
 }
 
+enum g_camera_mode {
+	paused,
+	follow_target,
+	follow_target_ease,
+	goto_coords,
+	goto_coords_ease,
+}
+
 /// @description GamePad Buttons
 enum g_button {
 	// directions

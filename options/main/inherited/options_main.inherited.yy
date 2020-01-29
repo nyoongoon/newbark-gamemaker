@@ -5,7 +5,7 @@
     "option_gameguid": "0650c8e9-4b54-4bac-a665-0ba0381e0fbd",
     "option_game_speed": 60,
     "option_spine_licence": true,
-    "option_lastchanged": "24 January 2020 1:05:20",
+    "option_lastchanged": "29 January 2020 1:03:56",
     "option_author": "Javi Aguilar",
     "option_sci_usesci": false
 }←1225f6b0-ac20-43bd-a82e-be73fa0b6f4f|{

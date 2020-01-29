@@ -7,6 +7,6 @@
 #macro g_viewport_height g_camera_height * 2
 
 // Player Movement
-#macro g_player_walk_speed 4
+#macro g_player_walk_speed 2
 #macro g_player_running_speed (g_player_walk_speed * 2)
-#macro g_player_dir_change_delay 5 // steps
+#macro g_player_dir_change_delay 6 // steps

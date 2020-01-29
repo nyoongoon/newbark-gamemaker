@@ -14,11 +14,16 @@ if(mv_target_y > y) y += mv_speed;
 if(mv_target_y < y) y -= mv_speed;
 
 // Check if player arrived to destination
-if ((mv_state == g_state.mv_moving) && (mv_target_x == x && mv_target_y == y))
+if (mv_target_x == x && mv_target_y == y)
 {
 	mv_state = g_state.mv_idle;
-	image_speed = 0;
-	image_index = 0;
+	
+	if(mv_last_collision == 0)
+	{
+		mv_last_collision = 0;
+		image_speed = 0;
+		image_index = 0;
+	}
 }
 
 // Finish if state is not idle
@@ -35,6 +40,7 @@ mv_dir = g_input_get_direction();
 // Finish if no direction pressed
 if (mv_dir == g_dir.none)
 {
+	mv_last_collision = 0;
 	return;
 }
 
@@ -61,11 +67,18 @@ if ((mv_dir_last != g_dir.none) && (mv_dir_last != mv_dir))
 mv_dir_last = mv_dir;
 
 // Detect collision
-if (g_tile_collision(mv_target_x + diff_x, mv_target_y + diff_y, "collisions") > 0) {
+mv_last_collision = g_tile_collision(mv_target_x + diff_x, mv_target_y + diff_y, mv_collisions_layer);
+if (mv_last_collision > 0) {
 	if !(audio_is_playing(mv_collisions_sound))
 	{
-		audio_play_sound(mv_collisions_sound, 1, false);
+		if (mv_collision_sound_delay > 0) {
+			mv_collision_sound_delay--;
+		} else {
+			audio_play_sound(mv_collisions_sound, 1, false);
+			mv_collision_sound_delay = mv_collision_sound_delay_initial;
+		}
 	}
+	image_speed = mv_speed_collision;
 	return;
 }
 

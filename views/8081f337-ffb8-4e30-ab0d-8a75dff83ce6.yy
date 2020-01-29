@@ -9,7 +9,7 @@
         "493fbbb7-776a-4b53-b710-fd286e5c3f8c"
     ],
     "filterType": "GMScript",
-    "folderName": "Movement",
+    "folderName": "Physics",
     "isDefaultView": false,
     "localisedFolderName": ""
 }

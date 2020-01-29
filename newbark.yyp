@@ -130,7 +130,7 @@
             "Key": "2a0606de-b78b-4abe-92c7-f5099532689d",
             "Value": {
                 "id": "b5e835ba-2d78-494e-98b4-643eaf5258ec",
-                "resourcePath": "rooms\/rz_new_bark\/rz_new_bark.yy",
+                "resourcePath": "rooms\/r_new_bark\/r_new_bark.yy",
                 "resourceType": "GMRoom"
             }
         },
@@ -188,6 +188,14 @@
                 "id": "35f3eafa-1329-4e44-a794-852568d03475",
                 "resourcePath": "views\/430abfc5-8446-4aa6-9c45-7161e9c1c120.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "493fbbb7-776a-4b53-b710-fd286e5c3f8c",
+            "Value": {
+                "id": "01769e83-2e92-49e5-b010-04a1109f5ad0",
+                "resourcePath": "scripts\/g_tile_collision\/g_tile_collision.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -455,6 +463,14 @@
             }
         },
         {
+            "Key": "eceba278-b3a1-49ee-88e3-833821c53164",
+            "Value": {
+                "id": "c72b19ab-c4e4-4693-b081-37da70d42db3",
+                "resourcePath": "sounds\/sfx_collide\/sfx_collide.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "f27934ef-b1ca-4977-9d43-c4451933f826",
             "Value": {
                 "id": "84a4823f-5b47-4c2b-a382-dd51fe7b6614",
@@ -504,7 +520,8 @@
         "ffb5bb05-76bc-432b-b540-6a1f610999d9",
         "a55bdf84-f462-4883-bc7d-861abbec2249",
         "2c483731-779d-4249-ac4e-a42d71d907c4",
-        "677f8ed9-80c7-4228-a4d0-ee36e04617cb"
+        "677f8ed9-80c7-4228-a4d0-ee36e04617cb",
+        "493fbbb7-776a-4b53-b710-fd286e5c3f8c"
     ],
     "tutorial": ""
 }

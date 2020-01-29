@@ -4,7 +4,7 @@
 if (mv_dir_change_delay > 0)
 {
 	mv_dir_change_delay--;
-	exit;
+	return;
 }
 
 // Move the player
@@ -59,7 +59,18 @@ if ((mv_dir_last != g_dir.none) && (mv_dir_last != mv_dir))
 
 // Change sprite and target
 mv_dir_last = mv_dir;
+
+// Detect collision
+if (g_tile_collision(mv_target_x + diff_x, mv_target_y + diff_y, "collisions") > 0) {
+	if !(audio_is_playing(mv_collisions_sound))
+	{
+		audio_play_sound(mv_collisions_sound, 1, false);
+	}
+	return;
+}
+
 mv_target_x += diff_x;
 mv_target_y += diff_y;
+
 sprite_index = mv_sprites[mv_dir];
 image_speed = mv_speed;

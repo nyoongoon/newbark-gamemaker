@@ -1,8 +1,8 @@
 {
-    "id": "32f66481-441d-4224-967a-b3fc9e89dc77",
+    "id": "b47b1aae-cdb7-4041-9001-d03c8a439d94",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "g_game_constants",
+    "name": "_enum_core",
     "IsCompatibility": false,
     "IsDnD": false
 }

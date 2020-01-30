@@ -2,23 +2,23 @@
 
 if (keyboard_check(vk_nokey))
 {
-	return g_dir.none;
+	return e_dir.none;
 }
 if (keyboard_check(vk_up))
 {
-	return g_dir.up;
+	return e_dir.up;
 }
 if (keyboard_check(vk_right))
 {
-	return g_dir.right;
+	return e_dir.right;
 }
 if (keyboard_check(vk_down))
 {
-	return g_dir.down;
+	return e_dir.down;
 }
 if (keyboard_check(vk_left))
 {
-	return g_dir.left;
+	return e_dir.left;
 }
 
 // Gamepad

@@ -28,9 +28,9 @@ if (mv_speed > 0)
 }
 
 // Check if player arrived to destination
-if ((mv_state == g_state.mv_moving) && (mv_target_x == x && mv_target_y == y))
+if ((mv_state == e_move_state.moving) && (mv_target_x == x && mv_target_y == y))
 {
-	mv_state = g_state.mv_idle;
+	mv_state = e_move_state.idle;
 	
 	if(mv_last_collision == 0)
 	{
@@ -40,7 +40,7 @@ if ((mv_state == g_state.mv_moving) && (mv_target_x == x && mv_target_y == y))
 }
 
 // Finish if state is not idle
-if (mv_state != g_state.mv_idle)
+if (mv_state != e_move_state.idle)
 {
 	return;
 }
@@ -52,7 +52,7 @@ mv_image_speed = g_player_walk_image_speed;
 mv_dir = g_input_get_direction();
 
 // Finish if no direction pressed
-if (mv_dir == g_dir.none)
+if (mv_dir == e_dir.none)
 {
 	mv_last_collision = 0;
 	image_speed = 0;
@@ -60,21 +60,21 @@ if (mv_dir == g_dir.none)
 }
 
 // Change state to moving
-mv_state = g_state.mv_moving;
+mv_state = e_move_state.moving;
 
 // Detect speed modifier buttons
 var pressed_buttons = g_input_get_buttons();
-if (pressed_buttons[g_button.btn_b] == true)
+if (pressed_buttons[e_btn.btn_b] == true)
 {
 	mv_speed = g_player_run_speed;
 	mv_image_speed = g_player_run_image_speed;
 }
 	
-var diff_x = mv_offsets[mv_dir, g_vector.xx];
-var diff_y = mv_offsets[mv_dir, g_vector.yy];
+var diff_x = mv_offsets[mv_dir, e_vector.vx];
+var diff_y = mv_offsets[mv_dir, e_vector.vy];
 		
 // Dir change / turn around detection
-if ((mv_dir_last != g_dir.none) && (mv_dir_last != mv_dir))
+if ((mv_dir_last != e_dir.none) && (mv_dir_last != mv_dir))
 {
 	diff_x = 0;
 	diff_y = 0;

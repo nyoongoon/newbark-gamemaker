@@ -1,7 +1,7 @@
 /// @description Update camera
 // https://www.youtube.com/watch?v=Gj6bTqKIsLk
 
-if (cam_mode == g_camera_mode.paused)
+if (cam_mode == e_camera_mode.paused)
 {
 	return;
 }
@@ -13,13 +13,13 @@ var view_hh = (cam_view_height div 2);
 
 switch(cam_mode)
 {
-    case g_camera_mode.follow_target:
+    case e_camera_mode.follow_target:
 		if(!instance_exists(cam_follow_target)) break;
         cx = cam_follow_target.x - view_wh;
         cy = cam_follow_target.y - view_hh;
     break;
 	
-    case g_camera_mode.follow_target_ease:
+    case e_camera_mode.follow_target_ease:
 		if(!instance_exists(cam_follow_target)) break;
 		var dx = cam_follow_target.x - view_wh;
 		var dy = cam_follow_target.y - view_hh;
@@ -29,16 +29,16 @@ switch(cam_mode)
 		if(point_distance(cx, cy, dx, dy) < 1)
 		{
 			// cam arrived to target
-			// cam_mode = g_camera_mode.follow_target;
+			// cam_mode = e_camera_mode.follow_target;
 		}
     break;	
 	
-    case g_camera_mode.goto_coords:
+    case e_camera_mode.goto_coords:
 		cx = cam_target_x - view_wh;
 		cy = cam_target_y - view_hh;
     break;
 	
-    case g_camera_mode.goto_coords_ease:
+    case e_camera_mode.goto_coords_ease:
 		cx = lerp(cx, cam_target_x - view_wh, cam_ease_speed);
 		cy = lerp(cy, cam_target_y - view_hh, cam_ease_speed);
     break;

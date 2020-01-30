@@ -3,7 +3,7 @@
 ///@arg destination_y
 ///@arg tilemap_layer_name
 
-var xx, yy, tilemap, cx, cy, tile_index;
+var xx, yy, cx, cy, tile_index;
 
 xx = argument0;
 yy = argument1;

@@ -8,7 +8,8 @@ mv_state = g_state.mv_idle;
 mv_target_x = x;
 mv_target_y = y;
 mv_speed = g_player_walk_speed;
-mv_speed_collision = 0.75;
+mv_image_speed = g_player_walk_image_speed;
+mv_speed_collision = 0.85;
 mv_dir = g_dir.none;
 mv_dir_last = g_dir.down;
 mv_dir_change_delay = 0;
@@ -39,7 +40,7 @@ mv_offsets[g_dir.left, g_vector.yy] = 0;
 // collisions
 mv_collisions_layer = "collisions";
 mv_collisions_sound = sfx_collide;
-mv_collision_sound_delay_initial = 10;
+mv_collision_sound_delay_initial = 3;
 mv_collision_sound_delay = mv_collision_sound_delay_initial;
 mv_last_collision = 0;
 

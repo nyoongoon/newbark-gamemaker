@@ -506,7 +506,7 @@
             "Key": "ffb5bb05-76bc-432b-b540-6a1f610999d9",
             "Value": {
                 "id": "a5e3b2ed-263e-4122-ad72-f60eb5c8b091",
-                "resourcePath": "scripts\/g_console_log\/g_console_log.yy",
+                "resourcePath": "scripts\/g_log\/g_log.yy",
                 "resourceType": "GMScript"
             }
         }

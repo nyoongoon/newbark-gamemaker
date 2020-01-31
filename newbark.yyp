@@ -39,6 +39,14 @@
             }
         },
         {
+            "Key": "0becd0ea-d7c7-4073-a8ec-1eca969eb50d",
+            "Value": {
+                "id": "1a8811d5-10c8-434e-a3a9-6f2d9206614a",
+                "resourcePath": "scripts\/_enum_movement\/_enum_movement.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "0da11dd3-c386-41da-b723-82343db6619b",
             "Value": {
                 "id": "b5c86b3d-55c1-4a0b-82e2-03f8af08081d",
@@ -588,6 +596,7 @@
         "712aa685-43d0-42fc-9d2a-f1a9c32fdf39",
         "7b07c044-b431-4edc-8b61-5d36de8ab043",
         "f6d4624f-2632-4881-a2a7-7cafd9c15564",
+        "0becd0ea-d7c7-4073-a8ec-1eca969eb50d",
         "5b6ba610-3d0f-43ba-89d3-ec4646d493a1",
         "a72f905d-9d0d-4f99-843f-55ed2be16dca",
         "2866febb-3e52-48a0-a26f-434c7f86cf4a",

@@ -14,17 +14,12 @@ if (mv_dir_change_delay > 0)
 
 // Move the player
 if (mv_speed > 0)
-{	
-	var pix_to_move_x = (mv_speed * 2) * (g_tile_width/room_speed);
-	var pix_to_move_y = (mv_speed * 2) * (g_tile_width/room_speed);
-	//var pix_to_move_x = mv_speed;
-	//var pix_to_move_y = mv_speed;
-
+{
 	// clamp if mv_speed is not multiple of g_tile_width
-	if(mv_target_x > x) x = clamp((x + pix_to_move_x), x, mv_target_x);
-	if(mv_target_x < x) x = clamp((x - pix_to_move_x), mv_target_x, x);
-	if(mv_target_y > y) y = clamp((y + pix_to_move_y), y, mv_target_y);
-	if(mv_target_y < y) y = clamp((y - pix_to_move_y), mv_target_y, y);
+	if(mv_target_x > x) x = clamp((x + mv_speed), x, mv_target_x);
+	if(mv_target_x < x) x = clamp((x - mv_speed), mv_target_x, x);
+	if(mv_target_y > y) y = clamp((y + mv_speed), y, mv_target_y);
+	if(mv_target_y < y) y = clamp((y - mv_speed), mv_target_y, y);
 }
 
 // Check if player arrived to destination

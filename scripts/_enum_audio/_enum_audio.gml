@@ -1,8 +1,10 @@
 enum e_sfx {
-	collision,
-	selection
+	sfx_collision,
+	sfx_selection,
+	bgm_newbark_town
 }
 
-enum e_bgm {
-	newbark_town
+enum e_audio_layer {
+	sfx,
+	bgm
 }

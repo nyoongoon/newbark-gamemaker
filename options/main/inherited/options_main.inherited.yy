@@ -13,26 +13,7 @@
 }←7fa50043-cea6-4cd0-9521-a8ba8c6ea9f0|{
     "audioGroups": {
         "Additions": [
-            {
-                "Key": 1,
-                "Value": {
-                    "id": "f27083ba-3eda-4cf4-aacd-de518c60c715",
-                    "modelName": "GMAudioGroup",
-                    "mvc": "1.0",
-                    "groupName": "audiogroup_music",
-                    "targets": 461609314234257646
-                }
-            },
-            {
-                "Key": 2,
-                "Value": {
-                    "id": "d0f7690e-e02d-46cc-9d96-d310f759f4ee",
-                    "modelName": "GMAudioGroup",
-                    "mvc": "1.0",
-                    "groupName": "audiogroup_sfx",
-                    "targets": 461609314234257646
-                }
-            }
+            
         ],
         "Checksum": "濑Ⱥ朦씁ᬄ縈",
         "Deletions": [

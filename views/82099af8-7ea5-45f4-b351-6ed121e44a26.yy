@@ -7,7 +7,7 @@
         "a21b570c-f11d-4235-8a11-15fe941501be"
     ],
     "filterType": "GMSound",
-    "folderName": "BGM",
+    "folderName": "Music",
     "isDefaultView": false,
     "localisedFolderName": ""
 }

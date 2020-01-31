@@ -56,6 +56,7 @@ if (mv_dir == e_dir.none)
 {
 	mv_last_collision = 0;
 	image_speed = 0;
+	image_index = 0;
 	return;
 }
 
@@ -94,7 +95,7 @@ if (mv_last_collision > 0) {
 		if (mv_collision_sound_delay > 0) {
 			mv_collision_sound_delay--;
 		} else {
-			audio_play_sound(mv_collisions_sound, 1, false);
+			g_audio_play(mv_collisions_sound, g_audio_sfx_volume, 0, false, 100);
 			mv_collision_sound_delay = mv_collision_sound_delay_initial;
 		}
 	}

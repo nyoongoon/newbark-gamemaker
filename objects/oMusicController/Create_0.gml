@@ -1,16 +1,12 @@
-/// @description Insert description here
-// You can write your code in this editor
+/// @description Load Audio Groups
 
 sfx_volume = 1;
-music_volume = 1;
+music_volume = 0.75;
 
-audio_group_load(audiogroup_music);
-audio_group_load(audiogroup_sfx);
+audio_channel_num(16);
+audio_group_load(audiogroup_default);
 
-sfx_audios = [];
-sfx_audios[e_sfx.collision] = sfx_collision;
-sfx_audios[e_sfx.selection] = sfx_selection;
-
-
-music_audios = [];
-music_audios[e_bgm.newbark_town] = bgm_newbark_town;
+if (audio_group_is_loaded(audiogroup_default))
+{
+	g_audio_play(bgm_newbark_town, g_audio_music_volume, 0, true, 100);
+}

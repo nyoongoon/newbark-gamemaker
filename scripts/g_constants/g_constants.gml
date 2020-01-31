@@ -12,3 +12,7 @@
 #macro g_player_walk_image_speed 2 // animation frames per second
 #macro g_player_run_image_speed 4 // animation frames per second
 #macro g_player_dir_change_delay 6 // in steps (frames)
+
+// Audio
+#macro g_audio_sfx_volume 100
+#macro g_audio_music_volume 25

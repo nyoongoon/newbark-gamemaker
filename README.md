@@ -1,18 +1,21 @@
-# NewBark for GameMaker Studio
-🌳 Retro-style 2D RPG game engine for Game Maker, inspired by Pokémon Gold, Silver and Crystal.
+# NewBark
+🌳 Retro-style 2D RPG game engine for GameMaker 2, inspired by Pokémon Gold, Silver and Crystal.
 
 ![screenshot](assets/images/screenshot.png)
 
+> IMPORTANT: This project is in low-maintainance mode, meaning that the issues/bug reporting section is not open, but it's open to Pull Requests if you find anything that you want to fix or new features you want to add.
+
+Looking for a Unity version? Check [newbark-unity](https://github.com/itsjavi/newbark-unity)
 
 ## Requirements
 
-- Game Maker 2.2+
+- YoYo Games - GameMaker 2.3+
 
 
 ## License
 
 This software is copyrighted and licensed under the 
-[MIT license](https://github.com/itsjavi/newbark-gm/LICENSE).
+[MIT license](https://github.com/itsjavi/newbark-gamemaker/LICENSE).
 
 ### Disclaimer
 
@@ -23,7 +26,7 @@ property of Nintendo, Creatures, inc., and GAME FREAK, inc. and is protected by
 various copyrights and trademarks.
 
 The goal of this project is not to create and/or distribute a game, but to learn
-how to create similar retro games in Game Maker. So this project, apart from being a possible
+how to create similar retro games in GameMaker. So this project, apart from being a possible
 base engine for future similar projects unrelated to the Pokémon franchise,
 has mainly educational purposes.
 
@@ -35,7 +38,7 @@ This software is not affiliated in any way with Nintendo,
 Pokémon or any other game company.
 
 A complete revision history of this software is available from
-https://github.com/itsjavi/newbark-gm
+https://github.com/itsjavi/newbark-gamemaker
 
 ---
 

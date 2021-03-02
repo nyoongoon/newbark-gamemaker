@@ -1,8 +1,12 @@
 {
-    "id": "493fbbb7-776a-4b53-b710-fd286e5c3f8c",
-    "modelName": "GMScript",
-    "mvc": "1.0",
-    "name": "g_tile_collision",
-    "IsCompatibility": false,
-    "IsDnD": false
+  "isDnD": false,
+  "isCompatibility": false,
+  "parent": {
+    "name": "Physics",
+    "path": "folders/Scripts/Physics.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "g_tile_collision",
+  "tags": [],
+  "resourceType": "GMScript",
 }

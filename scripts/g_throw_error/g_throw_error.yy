@@ -1,8 +1,12 @@
 {
-    "id": "a55bdf84-f462-4883-bc7d-861abbec2249",
-    "modelName": "GMScript",
-    "mvc": "1.0",
-    "name": "g_throw_error",
-    "IsCompatibility": false,
-    "IsDnD": false
+  "isDnD": false,
+  "isCompatibility": false,
+  "parent": {
+    "name": "System",
+    "path": "folders/Scripts/System.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "g_throw_error",
+  "tags": [],
+  "resourceType": "GMScript",
 }

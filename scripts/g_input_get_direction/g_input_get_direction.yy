@@ -1,8 +1,12 @@
 {
-    "id": "a72f905d-9d0d-4f99-843f-55ed2be16dca",
-    "modelName": "GMScript",
-    "mvc": "1.0",
-    "name": "g_input_get_direction",
-    "IsCompatibility": false,
-    "IsDnD": false
+  "isDnD": false,
+  "isCompatibility": false,
+  "parent": {
+    "name": "Input",
+    "path": "folders/Scripts/Input.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "g_input_get_direction",
+  "tags": [],
+  "resourceType": "GMScript",
 }

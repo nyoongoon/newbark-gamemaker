@@ -1,0 +1,16 @@
+{
+  "option_gameguid": "0650c8e9-4b54-4bac-a665-0ba0381e0fbd",
+  "option_game_speed": 60,
+  "option_mips_for_3d_textures": false,
+  "option_draw_colour": 4294967295,
+  "option_window_colour": 4281611316,
+  "option_steam_app_id": "0",
+  "option_sci_usesci": false,
+  "option_author": "Javi Aguilar",
+  "option_lastchanged": "29 January 2020 1:03:56",
+  "option_spine_licence": true,
+  "resourceVersion": "1.2",
+  "name": "Main",
+  "tags": [],
+  "resourceType": "GMMainOptions",
+}

@@ -1,8 +1,12 @@
 {
-    "id": "712aa685-43d0-42fc-9d2a-f1a9c32fdf39",
-    "modelName": "GMScript",
-    "mvc": "1.0",
-    "name": "_enum_state",
-    "IsCompatibility": false,
-    "IsDnD": false
+  "isDnD": false,
+  "isCompatibility": false,
+  "parent": {
+    "name": "Enums",
+    "path": "folders/Scripts/Enums.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "_enum_state",
+  "tags": [],
+  "resourceType": "GMScript",
 }
